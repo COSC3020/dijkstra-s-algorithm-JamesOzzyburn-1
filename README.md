@@ -24,3 +24,8 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+## Answer
+
+The while loop takes $V$ time to complete. The first inner for loop also takes $V$ time to complete. The second inner for loop runs through all of the edges connected to a node so at the end of the program it will have run $E$. In total we have $V * V + E$ this can be simplfied to $V^2 + E$ getting us the our final answer of $\Theta(|V|^2 + |E|)$.
