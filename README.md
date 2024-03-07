@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/2Wy-Iis-)
 # Dijkstra's Algorithm
 
 Recall the pseudocode for Dijkstra's algorithm:
@@ -23,3 +24,8 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+## Answer
+
+The while loop takes $V$ time to complete. The first inner for loop also takes $V$ time to complete. The second inner for loop runs through all of the edges connected to a node so at the end of the program it will have run $E$. In total we have $V * V + E$ this can be simplfied to $V^2 + E$ getting us the our final answer of $\Theta(|V|^2 + |E|)$.
